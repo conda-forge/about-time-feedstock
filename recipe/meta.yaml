@@ -1,5 +1,5 @@
 {% set name = "about-time" %}
-{% set version = "3.1.1" %}
+{% set version = "4.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/about-time-{{ version }}.tar.gz
-  sha256: 586b329450c9387d1ae8c42d2db4f5b4c57a54508d0f1b7bb00322ffd5ce9f9b
+  sha256: 963b1f3739b0c9732eb205031762b76f1291d89b5d0c8220a8d5b154e32ce650
   patches:
     - setup-with-encoding.patch
 
@@ -18,10 +18,10 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7,<4.0
     - pip
   run:
-    - python >=3.6
+    - python >=3.7,<4.0
 
 test:
   imports:
