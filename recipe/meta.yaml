@@ -1,5 +1,5 @@
 {% set name = "about-time" %}
-{% set version = "4.2.0" %}
+{% set version = "4.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/about-time-{{ version }}.tar.gz
-  sha256: 9918934ecba7054f938fad1e5171fb70b944975c8349bf2663116a654c9ff35f
+  sha256: 6a538862d33ce67d997429d14998310e1dbfda6cb7d9bbfbf799c4709847fece
 
 build:
   noarch: python
